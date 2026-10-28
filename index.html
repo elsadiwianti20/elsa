@@ -3,262 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elsa Diwianti | Personal Portfolio</title>
+    <title>Portofolio Elsa Diwianti ✨</title>
+    
+    <!-- Link CSS Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Link CSS Kustom Kamu -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <header class="navbar">
-        <a href="#home" class="logo">ED<span>.</span></a>
+    <nav class="navbar">
+        <div class="logo">Portofolio Elsa ✨</div>
+        <ul class="nav-links">
+            <li><a href="#tentang">Kenalan</a></li>
+            <li><a href="#proyek">Karya & Proyek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
 
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu">
-            ☰
-        </button>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-shape-1"></div>
+        <div class="hero-shape-2"></div>
+        <div class="hero-container">
+            <div class="hero-avatar-wrapper">
+                <img src="rt.jpeg" alt="Foto Elsa Diwianti" class="hero-avatar">
+            </div>
+            
+            <div class="hero-text">
+                <h1>Hai, Saya Elsa diwianti 👋</h1>
+                <p>Seorang web developer amatiran tapi punya semangat tinggi buat bikin website yang keren, rapi, dan enak dilihat.</p>
+                <a href="#tentang" class="btn-cta">Ngecek biodata Saya yuk!</a>
+            </div>
+        </div>
+    </section>
 
-        <nav class="nav-menu" id="navMenu">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#works">Works</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <!-- TENTANG SAYA -->
+    <section id="tentang" class="section-container">
+        <h2 class="section-title">Kenalan dengan Elsa</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hai! Saya Elsa, lagi belajar bikin website biar makin jago ngulik HTML dan CSS.</p>
+            </div>
+            <ul>
+                <li><strong>Hobi:</strong> Nonton dan membaca</li>
+                <li><strong>Makanan Favorit:</strong> Coto Makassar, ayam,manisan, kusuka semua makanan asal enak</li>
+                <li><strong>Olahraga yang saya suka:</strong> Volly dan badminton</li>
+            </ul>
+        </div>
+    </section>
 
-        <a href="#contact" class="nav-cta">LET'S TALK ↗</a>
-    </header>
-
-
-    <!-- HERO -->
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <p class="eyebrow">INFORMATICS STUDENT / PORTFOLIO 2026</p>
-                <h1>
-                    Hello, I'm<br>
-                    <span>Elsa Diwianti.</span>
-                </h1>
-                <p class="hero-description">
-                    Saya mahasiswa Informatika yang tertarik pada
-                    pemrograman, teknologi, dan pengembangan website
-                    yang menarik serta mudah digunakan.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#works" class="primary-button">
-                        EXPLORE MY WORKS ↘
-                    </a>
-                    <a href="#about" class="secondary-button">
-                        ABOUT ME
-                    </a>
+    <!-- KARYA & PROYEK -->
+    <section id="proyek" class="section-container">
+        <h2 class="section-title">Hasil Karya & Proyek Saya</h2>
+        
+        <div class="project-grid">
+            <!-- PROYEK 1 -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="coding.jpg" alt="Preview Portofolio" class="card-img-foto">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Website Portofolio Pribadi</h3>
+                    <p class="card-desc">Website untuk memperkenalkan diri dan menampilkan keterampilan serta hasil karya pribadi.</p>
+                    <button class="btn-card">Lihat Detail</button>
                 </div>
             </div>
 
-            <div class="hero-visual">
-                <div class="visual-top">
-                    <span>PORTFOLIO</span>
-                    <span>01 / 04</span>
+            <!-- PROYEK 2 -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="kos.jpeg" alt="Preview Pencarian Kos" class="card-img-foto">
                 </div>
-                <div class="visual-center">
-                    <div class="visual-circle">
-                        <span>ED</span>
-                    </div>
-                    <p>CREATIVE MIND<br>DEVELOPING IDEAS</p>
-                </div>
-                <div class="visual-bottom">
-                    <span>BASED IN INDONESIA</span>
-                    <span>SCROLL TO EXPLORE ↓</span>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ABOUT -->
-        <section class="about section-padding" id="about">
-            <div class="section-label">
-                <span>01 / ABOUT ME</span>
-                <span>A LITTLE INTRODUCTION</span>
-            </div>
-
-            <div class="about-content">
-                <h2>
-                    Learning today,<br>
-                    <span>building tomorrow.</span>
-                </h2>
-                <div class="about-description">
-                    <p>
-                        Saya adalah mahasiswa Informatika yang sedang
-                        mengembangkan kemampuan dalam pemrograman dan
-                        pembuatan website.
-                    </p>
-                    <p>
-                        Saya senang mempelajari hal baru, mencoba
-                        berbagai teknologi, dan mengubah ide menjadi
-                        proyek sederhana yang bermanfaat.
-                    </p>
-                    <button type="button" class="text-button" id="openProfile">
-                        MORE ABOUT ME <span>↗</span>
-                    </button>
+                <div class="card-content">
+                    <h3 class="card-title">Aplikasi Pencarian Kos</h3>
+                    <p class="card-desc">Konsep aplikasi untuk membantu mahasiswa mencari kos dengan informasi harga, alamat, dan fasilitas.</p>
+                    <button class="btn-card">Lihat Detail</button>
                 </div>
             </div>
 
-            <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JAVASCRIPT</span>
-                <span>PHP</span>
-                <span>JAVA</span>
-            </div>
-        </section>
-
-
-        <!-- WORKS -->
-        <section class="works section-padding" id="works">
-            <div class="section-label">
-                <span>02 / SELECTED WORKS</span>
-                <span>MY LEARNING JOURNEY</span>
-            </div>
-
-            <div class="works-heading">
-                <h2>Projects I've<br><span>been working on.</span></h2>
-                <p>
-                    Beberapa proyek latihan yang saya buat untuk
-                    mengembangkan kemampuan di bidang teknologi.
-                </p>
-            </div>
-
-            <div class="project-grid">
-
-                <!-- PROJECT 1 -->
-                <article class="project-card">
-                    <div class="project-visual project-one">
-                        <span class="project-number">PROJECT 01</span>
-                        <div class="mini-window">
-                            <div class="mini-window-top">
-                                <span></span><span></span><span></span>
-                            </div>
-                            <div class="mini-window-content">
-                                <div class="mini-sidebar"></div>
-                                <div class="mini-lines">
-                                    <i></i><i></i><i></i><i></i>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="project-symbol">↗</span>
-                    </div>
-
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span>WEB DEVELOPMENT</span>
-                            <span>2026</span>
-                        </div>
-                        <h3>Campus Portal</h3>
-                        <p>Website portal akademik sederhana dengan tampilan informasi dan navigasi yang rapi.</p>
-                        
-                        <button type="button" class="detail-button" data-project="campus">
-                            LIHAT DETAIL <span>↗</span>
-                        </button>
-                    </div>
-                </article>
-
-                <!-- PROJECT 2 -->
-                <article class="project-card">
-                    <div class="project-visual project-two">
-                        <span class="project-number">PROJECT 02</span>
-                        <div class="form-illustration">
-                            <div class="form-heading"></div>
-                            <div class="form-line"></div>
-                            <div class="form-line"></div>
-                            <div class="form-line"></div>
-                            <div class="form-submit"></div>
-                        </div>
-                        <span class="project-symbol">↗</span>
-                    </div>
-
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span>FORM PROCESSING</span>
-                            <span>2026</span>
-                        </div>
-                        <h3>Student Form</h3>
-                        <p>Formulir data mahasiswa untuk latihan input dan pemrosesan data menggunakan PHP.</p>
-
-                        <button type="button" class="detail-button" data-project="form">
-                            LIHAT DETAIL <span>↗</span>
-                        </button>
-                    </div>
-                </article>
-
-                <!-- PROJECT 3 -->
-                <article class="project-card">
-                    <div class="project-visual project-three">
-                        <span class="project-number">PROJECT 03</span>
-                        <div class="code-illustration">
-                            <span>01</span>
-                            <p>public class</p>
-                            <p>&nbsp;&nbsp;Sorting { }</p>
-                            <p>&nbsp;&nbsp;int[] data;</p>
-                            <p>&nbsp;&nbsp;sort(data);</p>
-                        </div>
-                        <span class="project-symbol">↗</span>
-                    </div>
-
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span>JAVA PROGRAMMING</span>
-                            <span>2026</span>
-                        </div>
-                        <h3>Sorting Program</h3>
-                        <p>Program latihan algoritma pengurutan data menggunakan bahasa pemrograman Java.</p>
-
-                        <button type="button" class="detail-button" data-project="sorting">
-                            LIHAT DETAIL <span>↗</span>
-                        </button>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-
-        <!-- CONTACT -->
-        <section class="contact section-padding" id="contact">
-            <div class="section-label">
-                <span>03 / GET IN TOUCH</span>
-                <span>LET'S CONNECT</span>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-heading">
-                    <p class="eyebrow">HAVE A QUESTION?</p>
-                    <h2>
-                        Let's start a<br>
-                        <span>conversation.</span>
-                    </h2>
-                    <p>
-                        Silakan kirim pesan melalui formulir di samping.
-                        Saya akan senang mengetahui ide atau pertanyaan
-                        yang ingin kamu sampaikan.
-                    </p>
-                    <a href="mailto:">EMAIL ME ↗</a>
+            <!-- PROYEK 3 -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="arduino.png" alt="Preview Sensor Suhu" class="card-img-foto">
                 </div>
-
-                <form class="contact-form" id="contactForm">
-                    <label for="name">NAMA LENGKAP</label>
-                    <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required>
-
-                    <label for="email">ALAMAT EMAIL</label>
-                    <input type="email" id="email" name="email" placeholder="nama@email.com" required>
-
-                    <label for="message">PESAN</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Tuliskan pesan kamu..." required></textarea>
-
-                    <button type="submit" class="submit-button">SEND MESSAGE ↗</button>
-                    <p id="formFeedback"></p>
-                </form>
+                <div class="card-content">
+                    <h3 class="card-title">Sistem Sensor Suhu</h3>
+                    <p class="card-desc">Proyek mikrokontroler menggunakan sensor DHT11 untuk membaca suhu dan kelembapan secara otomatis.</p>
+                    <button class="btn-card">Lihat Detail</button>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- KONTAK -->
+    <section id="kontak" class="section-container">
+        <h2 class="section-title">Mau Ngobrol atau Kerja Bareng?</h2>
+        <div class="contact-form-wrapper">
+            <form>
+                <div class="form-group">
+                    <label>Nama Kamu</label>
+                    <input type="text" placeholder="Contoh: elsa diwianti" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Kamu</label>
+                    <input type="email" placeholder="contoh@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Pesan / Obrolan</label>
+                    <textarea rows="4" placeholder="Tulis pesan atau sapaan di sini..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Pesan 🚀</button>
+            </form>
+        </div>
+    </section>
 
-    <!-- MODAL DETAIL PROYEK (SAMA SEPERTI TEMAN ANDA) -->
+    <!-- MODAL POPUP DETAIL PROYEK -->
     <div class="modal-overlay" id="modalProyek">
         <div class="modal-box">
             <button class="modal-close" id="btnClose">&times;</button>
@@ -267,17 +134,10 @@
         </div>
     </div>
 
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <a href="#home" class="logo">ED<span>.</span></a>
-        <p>DESIGNED & DEVELOPED BY ELSA DIWIANTI</p>
-        <a href="#home">BACK TO TOP ↑</a>
-    </footer>
-
-
-    <!-- JAVASCRIPT -->
+    <!-- Link JS Bootstrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Script JS Kustom Kamu -->
     <script src="script.js"></script>
-
 </body>
 </html>
